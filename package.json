@@ -1,0 +1,22 @@
+{
+  "name": "trainingapp",
+  "version": "1.0.0",
+  "description": "Simple application which lists the training sessions for employees.",
+  "main": "app.js",
+  "scripts": {
+    "bundle": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrishikeshqb/TrainingApp.git"
+  },
+  "author": "hrishikeshqb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrishikeshqb/TrainingApp/issues"
+  },
+  "devDependencies": {
+    "angular": "^1.6.0",
+    "webpack": "^1.14.0"
+  }
+}
