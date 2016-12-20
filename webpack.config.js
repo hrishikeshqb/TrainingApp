@@ -9,6 +9,15 @@ module.exports = {
     path: __dirname + '/js',
     filename: 'app.bundle.js'
   },
+  module:{
+    loaders: [
+      {
+        test: /\.scss$/,
+        loader: "style!css!sass",
+        exclude: /node_modules/
+      }
+    ],
+  },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
   ]
