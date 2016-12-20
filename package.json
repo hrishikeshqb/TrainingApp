@@ -4,7 +4,9 @@
   "description": "Simple application which lists the training sessions for employees.",
   "main": "app.js",
   "scripts": {
-    "bundle": "webpack"
+    "build": "webpack --bail --progress --profile",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "start": "npm run server"
   },
   "repository": {
     "type": "git",
