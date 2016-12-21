@@ -3,7 +3,7 @@ module.exports = {
   context: __dirname + '/src',
   entry: {
     app: './app.js',
-    vendor: ['angular']
+    vendor: ['angular', 'angular-ui-router']
   },
   output: {
     path: __dirname + '/js',
