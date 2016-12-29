@@ -1,0 +1,8 @@
+<div class="tabsWrapper">
+  <ul class="tabList">
+    <li ng-repeat="tab in tabs" class="tabItem" ng-class="{selectedTabItem: tab.selected==true}" ng-click="select(tab)">
+      <span class="tabTitle">{{tab.title}}</span>
+    </li>
+  </ul>
+  <div ng-transclude></div>
+</div>

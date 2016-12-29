@@ -1,0 +1,29 @@
+.tabsWrapper {
+  padding: 10px;
+}
+
+.tabList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
+  align-items: center;
+  height: 50px;
+}
+
+.selectedTabItem {
+  border-bottom: 5px solid #002663;
+}
+
+.tabItem {
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor:pointer;
+}
+
+.tabTitle{
+  color: #000000;
+  font-weight: 900;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
