@@ -1,0 +1,39 @@
+{ data:[
+  {
+    owner: "me",
+    title: "Sample training1",
+    description:"",
+    venue: "",
+    startDate:"",
+    endDate:"",
+  },
+  {
+    owner: "me",
+    title: "Sample training2",
+    description:"",
+    venue: "",
+    startDate:"",
+    endDate:"",
+  },{
+    owner: "me",
+    title: "Sample training3",
+    description:"",
+    venue: "",
+    startDate:"",
+    endDate:"",
+  },{
+    owner: "me",
+    title: "Sample training4",
+    description:"",
+    venue: "",
+    startDate:"",
+    endDate:"",
+  },{
+    owner: "me",
+    title: "Sample training5",
+    description:"",
+    venue: "",
+    startDate:"",
+    endDate:"",
+  },
+]}

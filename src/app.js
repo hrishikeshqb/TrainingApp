@@ -19,4 +19,15 @@ angular.module('trainingApp',['ui.router', 'trainingWrapper', 'header', 'footer'
                  '<trainingwrapper></trainingwrapper>'+
                  '<footer></footer>',
       });
-  });
+  }).service('trainingService',['$http', function ($http){
+    this.getTrainings = function(){
+      $http({
+        method: 'GET',
+        url: '/src/mockdata.json'
+      }).then(function successCallback(response) {
+          console.log('Succeffully fetched data', response);
+      }, function errorCallback() {
+          console.log('Failed!');
+      });
+    };
+  }]);
