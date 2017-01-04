@@ -4,7 +4,7 @@ webpackJsonp([0],[
 
 	'use-strict';
 	__webpack_require__(1);
-	__webpack_require__(7);
+	__webpack_require__(8);
 
 	angular.module('trainingApp',['ui.router', 'header', 'footer']).config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
@@ -28,33 +28,44 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var headerDirective = __webpack_require__(2);
-	__webpack_require__(3);
+	__webpack_require__(4);
 	angular.module('header', []).directive('header', headerDirective);
 
 
 /***/ },
 /* 2 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
+
+	var headerTemplateUrl = __webpack_require__(3);
 
 	module.exports = function(){
 	 return {
 	   restrict: 'E',
-	   templateUrl: '/src/components/header/header.html',
+	   templateUrl: headerTemplateUrl,
 	 };
 	}
 
 
 /***/ },
 /* 3 */
+/***/ function(module, exports) {
+
+	var path = '/home/hrishikesh/Desktop/AngularTut/TrainingApp/src/components/header/header.html';
+	var html = "<div class=\"trainingHeader\">\n  Training app\n</div>\n";
+	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+	module.exports = path;
+
+/***/ },
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(4);
+	var content = __webpack_require__(5);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -71,10 +82,10 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 
@@ -85,7 +96,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	/*
@@ -141,7 +152,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -393,19 +404,20 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var footerDirective = __webpack_require__(8);
-	__webpack_require__(10);
+	var footerDirective = __webpack_require__(9);
+	__webpack_require__(11);
 	angular.module('footer', []).directive('footer', footerDirective);
 
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var footerTemplateUrl = __webpack_require__(9);
+	var footerTemplateUrl = __webpack_require__(10);
+
 	module.exports = function(){
 	 return {
 	   restrict: 'E',
@@ -415,7 +427,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports) {
 
 	var path = '/home/hrishikesh/Desktop/AngularTut/TrainingApp/src/components/footer/footer.html';
@@ -424,16 +436,16 @@ webpackJsonp([0],[
 	module.exports = path;
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(11);
+	var content = __webpack_require__(12);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -450,10 +462,10 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 
