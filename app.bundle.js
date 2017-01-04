@@ -397,30 +397,40 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var footerDirective = __webpack_require__(8);
-	__webpack_require__(9);
+	__webpack_require__(10);
 	angular.module('footer', []).directive('footer', footerDirective);
 
 
 /***/ },
 /* 8 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
+	var footerTemplateUrl = __webpack_require__(9);
 	module.exports = function(){
 	 return {
 	   restrict: 'E',
-	   templateUrl: '/src/components/footer/footer.html',
+	   templateUrl: footerTemplateUrl,
 	 };
 	}
 
 
 /***/ },
 /* 9 */
+/***/ function(module, exports) {
+
+	var path = '/home/hrishikesh/Desktop/AngularTut/TrainingApp/src/components/footer/footer.html';
+	var html = "<div class=\"trainingFooter\">\n About\n</div>\n";
+	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+	module.exports = path;
+
+/***/ },
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(10);
+	var content = __webpack_require__(11);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(6)(content, {});
@@ -440,7 +450,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(5)();
