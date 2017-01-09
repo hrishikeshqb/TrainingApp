@@ -4,9 +4,11 @@
   "description": "Simple application which lists the training sessions for employees.",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --bail --progress --profile",
-    "server": "webpack-dev-server --history-api-fallback --inline --progress",
-    "start": "npm run server"
+    "build": "NODE_ENV=development webpack",
+    "prod": "NODE_ENV=production webpack",
+    "server": "webpack-dev-server",
+    "start":"npm run server",
+    "deploy": "gh-pages -d js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,9 @@
     "angular": "^1.6.0",
     "angular-ui-router": "^0.3.2",
     "css-loader": "^0.26.1",
+    "gh-pages": "^0.12.0",
+    "html-webpack-plugin": "^2.26.0",
+    "ngtemplate-loader": "^1.3.1",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0"

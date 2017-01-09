@@ -1,6 +1,8 @@
+var headerTemplateUrl = require('ngtemplate!html!./header.html');
+
 module.exports = function(){
  return {
    restrict: 'E',
-   templateUrl: '/src/components/header/header.html',
+   templateUrl: headerTemplateUrl,
  };
 }
