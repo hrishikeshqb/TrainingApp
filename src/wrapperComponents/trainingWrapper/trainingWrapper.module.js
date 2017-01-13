@@ -3,4 +3,4 @@ require('./trainingWrapper.scss');
 require('../../components/tabs/tabs.module.js');
 require('../../components/training/training.module.js');
 
-angular.module('trainingWrapper', ['tabs']).directive('trainingwrapper', trainingWrapperDirective);
+angular.module('trainingWrapper', ['tabs', 'commonServiceModule']).directive('trainingwrapper', trainingWrapperDirective);

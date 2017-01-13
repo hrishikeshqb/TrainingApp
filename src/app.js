@@ -2,8 +2,9 @@
 require('./wrapperComponents/trainingWrapper/trainingWrapper.module.js')
 require('./components/header/header.module.js');
 require('./components/footer/footer.module.js');
+require('./services/index.js');
 
-angular.module('trainingApp',['ui.router', 'trainingWrapper', 'header', 'footer']).
+angular.module('trainingApp',['ui.router', 'trainingWrapper', 'header', 'footer', require('angular-bootstrap-calendar')]).
   config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // For any unmatched url, redirect to /home
@@ -19,15 +20,4 @@ angular.module('trainingApp',['ui.router', 'trainingWrapper', 'header', 'footer'
                  '<trainingwrapper></trainingwrapper>'+
                  '<footer></footer>',
       });
-  }).service('trainingService',['$http', function ($http){
-    this.getTrainings = function(){
-      $http({
-        method: 'GET',
-        url: '/src/mockdata.json'
-      }).then(function successCallback(response) {
-          console.log('Succeffully fetched data', response);
-      }, function errorCallback() {
-          console.log('Failed!');
-      });
-    };
-  }]);
+  });

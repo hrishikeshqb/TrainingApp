@@ -4,7 +4,7 @@
   "description": "Simple application which lists the training sessions for employees.",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --bail --progress --profile",
+    "build": "webpack --host 10.9.12.213 --bail --progress --profile ",
     "server": "webpack-dev-server --hot --history-api-fallback --inline --progress",
     "start": "npm run server"
   },
@@ -18,11 +18,18 @@
     "url": "https://github.com/hrishikeshqb/TrainingApp/issues"
   },
   "devDependencies": {
-    "angular": "^1.6.0",
+    "angular": "^1.6.1",
+    "angular-bootstrap-calendar": "^0.27.5",
     "angular-ui-router": "^0.3.2",
+    "bootstrap-only-css": "^1.0.0",
     "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "moment": "^2.17.1",
+    "node-sass": "^4.2.0",
+    "resolve-url-loader": "^1.6.1",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
