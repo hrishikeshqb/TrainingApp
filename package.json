@@ -20,6 +20,8 @@
   "devDependencies": {
     "angular": "^1.6.0",
     "angular-ui-router": "^0.3.2",
+    "angular-bootstrap-calendar": "^0.27.5",
+    "bootstrap-only-css": "^1.0.0",
     "css-loader": "^0.26.1",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
