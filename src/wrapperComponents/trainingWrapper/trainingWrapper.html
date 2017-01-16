@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div class="col-md-6 text-center">
+    <div class="btn-group">
+      <button
+        class="btn btn-primary"
+        mwl-date-modifier
+        date="vm.viewDate"
+        decrement="vm.calendarView">
+        Previous
+      </button>
+      <button
+        class="btn btn-default"
+        mwl-date-modifier
+        date="vm.viewDate"
+        set-to-today>
+        Today
+      </button>
+      <button
+        class="btn btn-primary"
+        mwl-date-modifier
+        date="vm.viewDate"
+        increment="vm.calendarView">
+        Next
+      </button>
+    </div>
+  </div>
+  <mwl-calendar
+    view="vm.calendarView"
+    view-date="vm.viewDate"
+    events="vm.events"
+    view-title="vm.calendarTitle"
+  </mwl-calendar>
+  </div>
+</div>
